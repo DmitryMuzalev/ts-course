@@ -3,7 +3,7 @@
    для описания открытой ( public ) части объекта без реализации (api).
 */
 
-interface Car {
+interface ICar {
   wheels: number;
   brand: string;
   type: string;
@@ -13,14 +13,14 @@ interface Car {
   [key: string]: unknown; // неограниченное количество полей
 }
 
-const car: Car = {
+const car: ICar = {
   wheels: 4,
   brand: 'BMW',
   type: 'sedan',
   isNew: true,
 };
 
-const car2: Car = {
+const car2: ICar = {
   wheels: 4,
   brand: 'Ford',
   type: 'sedan',
