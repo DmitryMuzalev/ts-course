@@ -14,7 +14,7 @@ function gradeDeveloper(developer: Developer, newLevel: Level) {
 }
 
 const exampleDeveloper: Developer = {
-  login: "bugagashka",
+  login: "Tom",
   skills: ["js", "ts", "git", "react", "redux"],
   level: "middle",
 };
