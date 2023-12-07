@@ -41,7 +41,6 @@ function example3(x: number[] | Date): void {
 }
 
 //_Example4
-
 type Fish = {
   swim: () => void;
 };
