@@ -4,7 +4,7 @@ const arrayStrings: string[] = [];
 const arrayStrings2: Array<string> = [];
 
 //! arrayStrings2.push(3); будет ошибка
-arrayStrings2.push('newString');
+arrayStrings2.push("newString");
 
 interface IPerson {
   name: string;
@@ -12,13 +12,13 @@ interface IPerson {
 }
 
 const persons: Array<IPerson> = [];
-persons.push({ name: 'Tom', age: 15 });
+persons.push({ name: "Tom", age: 15 });
 console.log(persons);
 
 const arrayOfArray: string[][] = [];
-arrayOfArray.push(['1', '2']);
+arrayOfArray.push(["1", "2"]);
 
-function printArray(array: unknown[]) {
+export function printArray(array: unknown[]) {
   array.forEach((el, index) => {
     console.log(el, index);
   });
