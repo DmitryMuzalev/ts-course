@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.printName = void 0;
 function printPosition(position) {
     console.log(`
    Position 
@@ -7,12 +9,12 @@ function printPosition(position) {
    `);
 }
 const obj = {
-    x: '1',
-    y: '2',
+    x: "1",
+    y: "2",
 };
 const obj2 = {
-    x: '2',
-    y: '3',
+    x: "2",
+    y: "3",
     z: 3,
 };
 printPosition(obj);
@@ -22,3 +24,4 @@ function printName(user) {
     console.log(`Hello, ${user.firstName.toUpperCase()} `);
     console.log(`Hello, ${(_a = user.lastName) === null || _a === void 0 ? void 0 : _a.toUpperCase()} `); // если свойство опциональное, то нужно проверять его наличие.
 }
+exports.printName = printName;
