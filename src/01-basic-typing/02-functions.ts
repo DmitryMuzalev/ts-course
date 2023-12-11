@@ -13,7 +13,7 @@ const sum3 = function (a: number, b: number): number {
 
 //*2
 function log(name: string, id?: number): void {
-  console.log(`Name: ${name}, id: ${id || 'anonym'}`);
+  console.log(`Name: ${name}, id: ${id || "anonym"}`);
 }
 
 /*
@@ -24,7 +24,7 @@ function log(name: string, id?: number): void {
 
 //*3
 function crash(): never {
-  throw new Error('crash');
+  throw new Error("crash");
 }
 
 /* 
@@ -34,7 +34,7 @@ function crash(): never {
 */
 
 //*4
-function average(...args: number[]): number {
+export function average(...args: number[]): number {
   const sum = args.reduce((a, b) => a + b);
   return sum / args.length;
 }

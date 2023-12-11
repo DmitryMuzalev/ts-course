@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.average = void 0;
 //*1
 function sum(a, b) {
     return a + b;
@@ -10,7 +12,7 @@ const sum3 = function (a, b) {
 // Для параметров функций обязательно нужно указывать тип.
 //*2
 function log(name, id) {
-    console.log(`Name: ${name}, id: ${id || 'anonym'}`);
+    console.log(`Name: ${name}, id: ${id || "anonym"}`);
 }
 /*
 Тип void выводится автоматически, когда мы работаем с пустой функцией
@@ -19,7 +21,7 @@ function log(name, id) {
 */
 //*3
 function crash() {
-    throw new Error('crash');
+    throw new Error("crash");
 }
 /*
   "Never" - ложное утверждение в логике. Функция, которая ничего не возвращает,
@@ -31,3 +33,4 @@ function average(...args) {
     const sum = args.reduce((a, b) => a + b);
     return sum / args.length;
 }
+exports.average = average;
