@@ -22,14 +22,14 @@ interface DataModel {
   };
 }
 
-type T0 = DataModel["elements"]["footer"];
+type T0 = DataModel['elements']['footer'];
 
 type someTuple = [number, string, boolean, ...string[]];
-const arr: someTuple = [1, "str", true, "", ""];
+const arr: someTuple = [1, 'str', true, '', ''];
 
 type T1 = someTuple[2]; // boolean
 type T2 = someTuple[3]; // string
 
-const sizes = ["small", "medium", "large"] as const; // readonly ["small", "medium", "large"]
+const sizes = ['small', 'medium', 'large'] as const; // readonly ["small", "medium", "large"]
 
 type T3 = (typeof sizes)[number]; // подучаем union "small" | "medium" | "large"
